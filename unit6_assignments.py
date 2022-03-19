@@ -43,7 +43,7 @@ def to_hex(decNum):
 # Converts decimal number (in the range 0 - 255) to hex
 
 # Difference from the function above is that this function
-# returns hex value with a leading "0", while the one above does not
+# returns hex value rendered with a leading "0"
 
 def doubleDigit_hex(decNum):
     if decNum < 0 or decNum > 255:
@@ -68,3 +68,15 @@ def hex_color(red, green, blue):
     hexColor = "#" +  doubleDigit_hex(red) + doubleDigit_hex(green) + doubleDigit_hex(blue)
 
     return hexColor
+
+# Function 3 - Reverse an array
+
+def my_reverse(l):
+    r = []
+
+    for item in l:
+        r.insert(0, item)
+
+    return r
+
+
