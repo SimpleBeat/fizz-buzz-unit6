@@ -17,7 +17,3 @@
 **Assignment 6.9** - Check if a number is prime
 
 **Assignment 6.10** - Look for a lot of prime numbers
-
-**Assignment 6.11** - Find prime numbers whose digits are the same backwards and forwards (palindrome)
-
-**Assignment 6.13** - Create a class to represent triangles
