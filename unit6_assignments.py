@@ -134,3 +134,18 @@ def is_prime(n):
             return False
     
     return True
+
+# Assignment 6.10 - Find Prime Numbers below the number n
+def primes_below(n):
+    # check valid input (less than 2)
+    if n < 3:
+        return []
+
+    # initial array of primes
+    primes = [2]
+
+    for number in range(3, n):
+        if is_prime(number):
+            primes.append(number)
+
+    return primes
