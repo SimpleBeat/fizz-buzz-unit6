@@ -1,4 +1,5 @@
 # FizzBuzz Unit 6 assignments
+from math import sqrt
 
 # Assignment 6.4 - my_range() function that returns the same output as list(range(m, n))
 def my_range(m, n):
@@ -108,3 +109,28 @@ def fizz_buzz():
             s = str(n) # if s is still empty it is not divisible by 3 or 5
         print(s)
 
+# Assignment 6.9 - Prime Number Test: test if the number n is prime (divisible only by 1 and itself)
+def is_prime(n):
+    # input validation check
+    if n < 2:
+        print("A number has to be greater than 1 to be prime!")
+        return None
+
+    # time warning (digits limit is over 15)
+    if len(str(n)) > 15:
+        print("This is a large number, it might take quite a long time to process")
+
+    # quick optimization for the first prime numbers below 100
+    for d in [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]:
+        if n == d:
+            return True
+        if n % d == 0:
+            return False
+    
+    # brute force solution with light optimization:
+    # given the optimization above the range can safely be from 11 to the approximate square root of the original number
+    for d in range(11, int(sqrt(n))+1):
+        if n % d == 0:
+            return False
+    
+    return True
