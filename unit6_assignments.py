@@ -78,17 +78,33 @@ def my_reverse(l):
 
     return r
 
-# Assignment 6.7 - Fibonacci sequence: find the first number of the Fibonacci sequence that has l digits
-def big_fibonacci(l):
+# Assignment 6.7 - Fibonacci sequence: find the first number of the Fibonacci sequence that has n digits
+def big_fibonacci(n):
 
     # initial starting members of the Fibonacci sequence 
     n1 = 1
     n2 = 1
 
-    while len(str(n2)) < l: # if we are still below the number of digits, continue calculating the next member of Fibonacci sequence
+    while len(str(n2)) < n: # if we are still below the number of digits, continue calculating the next member of Fibonacci sequence
         sum = n1 + n2 # calculating the next member
         n1 = n2
         n2 = sum
     
     return n2
+
+# Assignment 6.8 - FizzBuzz: for numbers from 1 to 1000
+# print 'Fizz' if n divisible by 3,
+# print 'Buzz' if n divisible by 5,
+# print 'FizzBuzz' if n divisible by both 3 and 5
+# print the number itself if it's not divisible by either 3 or 5
+def fizz_buzz():
+    for n in range(1, 1001):
+        s = "" # initial string
+        if n % 3 == 0:
+            s += "Fizz" # adding 'Fizz' if n divisible by 3
+        if n % 5 == 0:
+            s += "Buzz" # adding 'Buzz' if n divisible by 5
+        if s == "":
+            s = str(n) # if s is still empty it is not divisible by 3 or 5
+        print(s)
 
