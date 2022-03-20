@@ -69,8 +69,7 @@ def hex_color(red, green, blue):
 
     return hexColor
 
-# Function 3 - Reverse an array
-
+# Assignment 6.6 - Reverse an array
 def my_reverse(l):
     r = []
 
@@ -79,4 +78,17 @@ def my_reverse(l):
 
     return r
 
+# Assignment 6.7 - Fibonacci sequence: find the first number of the Fibonacci sequence that has l digits
+def big_fibonacci(l):
+
+    # initial starting members of the Fibonacci sequence 
+    n1 = 1
+    n2 = 1
+
+    while len(str(n2)) < l: # if we are still below the number of digits, continue calculating the next member of Fibonacci sequence
+        sum = n1 + n2 # calculating the next member
+        n1 = n2
+        n2 = sum
+    
+    return n2
 
