@@ -10,7 +10,7 @@
 
 **Assignment 6.6** - Reverse an array (without using built-in `reverse()` function)
 
-**Assignment 6.7** - Find the first number of the Fibonacci sequence that has `l` digits (for 1 it is 1, for 2 it is 13, etc)
+**Assignment 6.7** - Find the first number of the Fibonacci sequence that has `n` digits (for 1 it is 1, for 2 it is 13, etc)
 
 **Assignment 6.8** - Classic programming challenge: FizzBuzz
 
