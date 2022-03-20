@@ -22,3 +22,4 @@
 
 **File `palindrome_primes.py` contains solution to the Assignment 6.11**
 
+**File `triangle.py` contains solution to the Assignment 6.13**
