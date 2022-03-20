@@ -2,6 +2,7 @@
 *Assignments from FizzBuzz Unit 6*
 
 **File `unit6_assignments.py` contains solutions to the following problems:**
+
 *Assignment 6.4* - `my_range()` function that returns the same output as `list(range(m, n))` without using `list()`
 
 *Assignment 6.5* - Color Hex Codes
